@@ -6,4 +6,4 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install .
 
-CMD ["python", "agent.py"]
+CMD ["python", "agent.py", "start"]
