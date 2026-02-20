@@ -1,4 +1,4 @@
-# LiveKit LemonSlice Agent
+# LiveKit LemonSlice Agent.
 
 A Python example that demonstrates how to integrate with the Lemon Slice API using the [LiveKit LemonSlice Plugin](https://lemonslice.com/docs/api-reference/livekit-agent-integration).
 
