@@ -10,6 +10,10 @@ from livekit.plugins import noise_cancellation, elevenlabs, lemonslice
 
 load_dotenv(dotenv_path=Path(__file__).with_name(".env"), override=True)
 
+# Temporary debug output for ElevenLabs env vars
+print("ELEVEN_API_KEY:", bool(os.getenv("ELEVEN_API_KEY")))
+print("ELEVEN_VOICE_ID:", os.getenv("ELEVEN_VOICE_ID"))
+
 logger = logging.getLogger(__name__)
 CHATBASE_API_URL = "https://www.chatbase.co/api/v1/chat"
 
