@@ -125,8 +125,10 @@ async def my_agent(ctx: agents.JobContext):
         stt="deepgram/nova-2",
         llm=NoopLLM(),
         tts=elevenlabs.TTS(
-            voice_id=require_env("ELEVEN_VOICE_ID"),
-            model="eleven_flash_v2_5",
+            api_key=os.getenv("ELEVEN_API_KEY"),
+            voice_id="EXAVITQu4vr4xnSDxMaL",
+            model="eleven_multilingual_v2",
+            stream=False,
         ),
         resume_false_interruption=False,
     )
